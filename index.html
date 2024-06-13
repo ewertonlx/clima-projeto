@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Clima 🌥️</h1>
+
+    <form class="busca">
+        <input placeholder="Digite alguma localização..." type="search" id="searchInput" />
+        <button>Buscar</button>
+    </form>
+
+    <div class="resultado">
+        <div class="titulo">--</div>
+        <div class="tempoatual">--</div>
+        <div class="info">
+            <div class="temp">
+                <div class="tempTitulo">Temperatura 🌡️</div>
+                <div class="tempInfo">-- <sup>ºC</sup></div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" />
+                <div class="tempMin">Temp mín. <sup>ºC</sup></div>
+                <div class="tempMax">Temp max. <sup>ºC</sup></div>
+            </div>
+            <div class="vento">
+                <div class="ventoTitulo">Vento 💨</div>
+                <div class="ventoInfo">-- <span>km/h</span></div>
+                <div class="ventoArea">
+                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                </div>
+            </div>
+            <div class="infoadd">
+                <div class="umidadeTitle">Umidade 💧</div>
+                <div class="umidadeInfo">-- <span>%</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aviso"></div>
+
+    <footer>Projeto Clima - ewertonlx</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
